@@ -17,6 +17,7 @@
             width: 20px;
             height: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -24,11 +25,12 @@
     <table>
         <tr>
             <th>Name</th>
-            <th>Telephone</th>
+            <th colspan="2">Telephone</th>
         </tr>
         <tr>
             <td>Bill Gates</td>
-            <td>555 77 854<br>555 77 855</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
         </tr>
     </table>
 
@@ -38,23 +40,51 @@
             <td>Bill Gates</td>
         </tr>
         <tr>
-            <th>Telephone:</th>
-            <td>555 77 854<br>555 77 855</td>
+            <th rowspan="2">Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
         </tr>
     </table>
 
     <table>
         <tr>
-            <td>First</td>
-            <td>Row</td>
-            <td rowspan="2"><img src="https://via.placeholder.com/20/00FF00/000000?text=✔" alt="Checkmark" class="checkmark"></td>
-            <td rowspan="2"><img src="https://via.placeholder.com/20/00FF00/000000?text=✔" alt="Checkmark" class="checkmark"></td>
-        </tr>
-        <tr>
-            <td>Second</td>
-            <td>Row</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>First</td>
+                        <td>Row</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>Row</td>
+                    </tr>
+                </table>
+            </td>
+            
+            <td>
+                <table>
+                    <tr>
+                        <td>First</td>
+                        <td>Row</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>Row</td>
+                    </tr>
+                </table>
+            </td>
+    
+            <td>
+                <img src="check.png" alt="Check" width="50" height="50">
+            </td>
+            <td>
+                <img src="check.png" alt="Check" width="50" height="50">
+            </td>
         </tr>
     </table>
+    
 
 </body>
 </html>
